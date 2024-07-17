@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native'
 const Category = () => {
     const navigation = useNavigation()
     return (
-        <ScrollView horizontal showsHorizontalScrollIndicator 
+        <ScrollView horizontal showsHorizontalScrollIndicator ={false}
          style={styles.container}>
            {
             Categories.map((item)=>(

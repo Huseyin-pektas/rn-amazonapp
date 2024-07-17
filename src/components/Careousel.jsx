@@ -7,16 +7,17 @@ const Careousel = () => {
     return (
         <View style={styles.carouselContainer}>
             <Swiper style={styles.wrapper}
-            autoplay={true}
-        showsHorizontalScrollIndicator={false}
-            showsPagination={false}
-            showsButtons={false}>
+                autoplay={true}
+                showsHorizontalScrollIndicator={false}
+                showsPagination={false}
+                showsButtons={false}>
                 {
                     CarouselData.map((item, i) => (
                         <View key={i}>
                             <Image
-                            resizeMode="stretch" source={item.image}
-                            style={styles.İmgStyle} />
+                                resizeMode="stretch" 
+                                source={item.image}
+                                style={styles.İmgStyle} />
                         </View>
                     ))}
             </Swiper>
@@ -27,11 +28,13 @@ const Careousel = () => {
 export default Careousel
 
 const styles = StyleSheet.create({
-    carouselContainer:{
-        position:"relative"
+    carouselContainer: {
+        position: "relative",
+        marginBottom:0
+
     },
     wrapper: {
-        
+        height:250
     },
     İmgStyle: {
         width: "100%",
